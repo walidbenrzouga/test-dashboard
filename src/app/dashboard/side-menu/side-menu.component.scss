@@ -1,0 +1,21 @@
+@import "../../../assets/scss/variables.scss";
+.side-menu-container {
+    li {
+        border-radius: 0;
+        background-color: $c-grey2;
+        &:hover:not(:first-child) {
+            background-color: $c-grey3;
+            cursor: pointer;
+        }
+    }
+
+    span {
+        color: $c-grey;
+        font-size: 14px;
+    }
+    .list-group-item {
+        border: none !important;
+        outline: none;
+    }
+}
+

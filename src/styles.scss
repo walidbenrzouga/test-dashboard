@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/mixin.scss';
+@import 'assets/scss/variables.scss';
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@include font-face(test-dashboard, testDashboard);
+
+.app-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  background-color: $bg-container;
+}
+
+[data-icon]:before {
+  font-family: "test-dashboard" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="td-"]:before,
+[class*=" td-"]:before {
+  font-family: "test-dashboard" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.td-file-o:before {
+  content: "\61";
+}
+.td-sweden:before {
+  content: "\62";
+}
+.td-thumbnails:before {
+  content: "\63";
+}
+.td-results:before {
+  content: "\64";
+}
+.td-list:before {
+  content: "\65";
+}
+.td-file-text:before {
+  content: "\66";
+}
+.td-page:before {
+  content: "\67";
+}
+.td-users:before {
+  content: "\68";
+}
+.td-file-text-o:before {
+  content: "\69";
+}
+.td-signal:before {
+  content: "\6a";
+}
+.td-graph:before {
+  content: "\6b";
+}
+.td-bars:before {
+  content: "\6c";
+}
+.td-user:before {
+  content: "\6d";
+}
+.td-calendar:before {
+  content: "\6e";
+}
+.td-bus:before {
+  content: "\6f";
+}
+.td-sliders:before {
+  content: "\70";
+}
+.td-users-1:before {
+  content: "\71";
+}
+.td-share-alt:before {
+  content: "\72";
+}
+.td-commenting:before {
+  content: "\73";
+}
+.td-ellipsis-v:before {
+  content: "\74";
+}
+.td-arrow-combo:before {
+  content: "\75";
+}
+.td-folder-o:before {
+  content: "\76";
+}
+.td-check-circle:before {
+  content: "\77";
+}
+
+.bg-white {
+  background-color: $c-white;
+}
+.td-share-alt:before {
+  content: "\72";
+}
+.td-commenting:before {
+  content: "\73";
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: $c-grey4;
+  color: $c-white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.icon-center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
